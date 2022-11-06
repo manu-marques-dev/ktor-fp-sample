@@ -1,6 +1,7 @@
 package com.example.customer
 
 import com.example.customer.infrastructure.customerModule
+import com.example.shared.infrastructure.di.SharedDIScope
 import com.example.shared.infrastructure.plugins.configureSerialization
 import io.ktor.client.request.*
 import io.ktor.http.*
@@ -13,7 +14,7 @@ class CustomerTest {
     fun `List all customers`() = testApplication {
         application {
             configureSerialization()
-            customerModule()
+            customerModule(sharedDIScope = object : SharedDIScope() {})
         }
         client.get("/customers").apply {
             assertEquals(HttpStatusCode.OK, status)

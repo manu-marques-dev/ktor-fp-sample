@@ -1,6 +1,7 @@
 package com.example.order
 
 import com.example.order.infrastructure.orderModule
+import com.example.shared.infrastructure.di.SharedDIScope
 import com.example.shared.infrastructure.plugins.configureSerialization
 import io.ktor.client.request.*
 import io.ktor.http.*
@@ -13,7 +14,7 @@ class OrderTest {
     fun `List all orders`() = testApplication {
         application {
             configureSerialization()
-            orderModule()
+            orderModule(sharedDIScope = object : SharedDIScope() {})
         }
         client.get("/orders").apply {
             assertEquals(HttpStatusCode.OK, status)
