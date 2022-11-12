@@ -1,1 +1,2 @@
-rootProject.name = "ktor-sample2"
+rootProject.name = "ktor-sample"
+include("module:shared")
