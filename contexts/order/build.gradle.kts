@@ -10,7 +10,6 @@ repositories {
 }
 
 dependencies {
-    api(libs.bundles.ktor.module)
-    implementation(libs.bundles.ktor.app)
+    implementation(project(":contexts:shared"))
     testImplementation(libs.bundles.tests)
 }

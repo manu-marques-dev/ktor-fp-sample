@@ -1,6 +1,6 @@
 package com.example.order
 
-import com.example.order.infrastructure.orderModule
+import com.example.contexts.order.infrastructure.orderModule
 import com.example.shared.infrastructure.di.SharedDIScope
 import com.example.shared.infrastructure.plugins.configureSerialization
 import io.ktor.client.request.*

@@ -2,7 +2,6 @@
 plugins {
     `java-library`
     alias(libs.plugins.kotlin)
-    alias(libs.plugins.serialization)
 }
 
 repositories {
@@ -10,7 +9,6 @@ repositories {
 }
 
 dependencies {
-    api(libs.bundles.ktor.module)
-    implementation(libs.bundles.ktor.app)
-    testImplementation(libs.bundles.tests)
+
 }
+

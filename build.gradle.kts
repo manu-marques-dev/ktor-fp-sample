@@ -1,10 +1,10 @@
 @Suppress("DSL_SCOPE_VIOLATION") // https://youtrack.jetbrains.com/issue/KTIJ-19369
 plugins {
     application
-    alias(libs.plugins.kotlin) //apply false
-    alias(libs.plugins.ktor) //apply false
-    alias(libs.plugins.ksp) //apply false
-    alias(libs.plugins.serialization) //apply false
+    alias(libs.plugins.kotlin)
+    alias(libs.plugins.ktor)
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.serialization)
 }
 
 
@@ -23,7 +23,7 @@ repositories {
 
 dependencies {
     implementation(project(":contexts:shared"))
-    implementation(libs.bundles.ktor.module)
+    implementation(project(":contexts:order"))
     implementation(libs.bundles.ktor.app)
     testImplementation(libs.bundles.tests)
     //ksp("libs.libraries.ksp-plugin")
