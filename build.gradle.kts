@@ -22,7 +22,7 @@ repositories {
 }
 
 dependencies {
-    implementation(project(":module:shared"))
+    implementation(project(":contexts:shared"))
     implementation(libs.bundles.ktor.module)
     implementation(libs.bundles.ktor.app)
     testImplementation(libs.bundles.tests)

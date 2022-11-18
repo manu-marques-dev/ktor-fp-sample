@@ -1,2 +1,2 @@
 rootProject.name = "ktor-sample"
-include("module:shared")
+include("contexts:shared")
