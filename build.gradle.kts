@@ -23,6 +23,7 @@ repositories {
 
 dependencies {
     implementation(project(":contexts:shared"))
+    implementation(project(":contexts:customer"))
     implementation(project(":contexts:order"))
     implementation(libs.bundles.ktor.app)
     testImplementation(libs.bundles.tests)

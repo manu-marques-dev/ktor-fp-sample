@@ -1,4 +1,4 @@
-package com.example.contexts.order.application
+package com.example.order.application
 
 import Amount
 import Item

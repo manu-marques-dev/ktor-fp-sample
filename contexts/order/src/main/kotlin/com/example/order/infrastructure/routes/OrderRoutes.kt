@@ -1,9 +1,9 @@
-package com.example.contexts.order.infrastructure.routes
+package com.example.order.infrastructure.routes
 
-import com.example.contexts.order.application.getTotal
-import com.example.contexts.order.application.loadAllOrders
-import com.example.contexts.order.application.loadOrder
-import com.example.contexts.order.infrastructure.di.OrderDIScope
+import com.example.order.application.getTotal
+import com.example.order.application.loadAllOrders
+import com.example.order.application.loadOrder
+import com.example.order.infrastructure.di.OrderDIScope
 import com.example.shared.infrastructure.routes.getParameterOrBadRequest
 import io.ktor.server.application.*
 import io.ktor.server.response.*

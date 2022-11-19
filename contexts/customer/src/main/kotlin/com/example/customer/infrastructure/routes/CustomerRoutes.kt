@@ -31,13 +31,13 @@ fun Route.customersRouting(customerDIScope: CustomerDIScope){
         post {
             val customer = call.receive<CustomerDTO>()
             customerDIScope.saveCustomer(customer)
-            call.respondText("com.example.customer.model.Customer stored correctly", status = HttpStatusCode.Created)
+            call.respondText("Customer stored correctly", status = HttpStatusCode.Created)
         }
 
         delete {
             val id = call.getParameterOrBadRequest("id") as String
             customerDIScope.removeCustomer(id)
-            call.respondText("com.example.customer.model.Customer removed correctly", status = HttpStatusCode.Accepted)
+            call.respondText("Customer removed correctly", status = HttpStatusCode.Accepted)
         }
     }
 }

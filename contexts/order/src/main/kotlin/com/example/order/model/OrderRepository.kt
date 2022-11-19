@@ -1,4 +1,4 @@
-package com.example.contexts.order.model
+package com.example.order.model
 
 import Order
 import OrderNumber

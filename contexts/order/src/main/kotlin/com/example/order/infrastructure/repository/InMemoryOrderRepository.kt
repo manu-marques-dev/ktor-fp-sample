@@ -1,4 +1,4 @@
-package com.example.contexts.order.infrastructure.repository
+package com.example.order.infrastructure.repository
 
 import Amount
 import Item
@@ -6,7 +6,7 @@ import Order
 import OrderItem
 import OrderNumber
 import Price
-import com.example.contexts.order.model.OrderRepository
+import com.example.order.model.OrderRepository
 
 class InMemoryOrderRepository: OrderRepository {
 

@@ -1,4 +1,5 @@
 rootProject.name = "ktor-sample"
 include("contexts:shared")
-include("database")
+include("contexts:customer")
 include("contexts:order")
+include("database")

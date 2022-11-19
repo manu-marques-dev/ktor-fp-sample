@@ -22,7 +22,7 @@ kotlin-test-junit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version
 kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines" }
 
 [bundles]
-ktor-module = ["ktor-server-core", "logback-classic", "kotlinx-coroutines-core", "arrow-core", "arrow-optics", "arrow-fx-coroutines"]
+ktor-module = ["ktor-server-core", "logback-classic", "kotlinx-coroutines-core", "arrow-core", "arrow-optics", "arrow-fx-coroutines", "ktor-serialization-kotlinx-json-jvm"]
 ktor-app = ["ktor-server-content-negotiation-jvm", "ktor-serialization-kotlinx-json-jvm", "ktor-server-netty-jvm"]
 tests = ["ktor-server-tests-jvm", "kotlin-test-junit", "kotlinx-coroutines-test"]
 
