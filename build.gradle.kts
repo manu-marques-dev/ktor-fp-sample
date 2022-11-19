@@ -30,6 +30,11 @@ dependencies {
     //ksp("libs.libraries.ksp-plugin")
 }
 
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile::class.java).all {
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+}
 
 
 
